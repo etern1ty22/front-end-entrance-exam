@@ -2,12 +2,817 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./js/main.js"></script>
+    <button onclick="downloadResume(0)">Скачать резюме №1</button>
+    <button onclick="downloadResume(1)">Скачать резюме №2</button>
+
+    <div class="page">
+      <div class="bentoFlexbox">
+        <img src="images/photo.png" alt="Моё фото" class="image" />
+        <section class="nameBox">
+          <h1 class="nameBox-greeting">Hello</h1>
+          <section class="yourInfo">
+            <span class="yourInfo-name">Name</p>
+            <span class="yourInfo-role">Role</p>
+          </section>  
+        </section>
+        <section class="languagesBox">
+          <div class = "languagesBox-title">
+            <span class="languagesBox-title-nameTitle">Languages</p>
+          </div>
+          <section class="languagesBox-listLanguages">
+            <section class="languagesBox-listLanguages-nameLanguage">
+              <span class="languagesBox-listLanguages-nameLanguage-text" style="margin-top:0px;">English<br></p>
+              <span class="languagesBox-listLanguages-nameLanguage-text">Malayalam<br></p>
+              <span class="languagesBox-listLanguages-nameLanguage-text">Hindi<br></p>
+            </section>
+            <section class="languagesBox-listLanguages-levelLanguage">
+              <hr class="languagesBox-listLanguages-levelLanguage-bar">
+              <hr class="languagesBox-listLanguages-levelLanguage-bar">
+              <hr class="small-bar">
+            </section>
+          </section>
+        </section>
+        <section class = "experienceBox">
+          <h1 class="experienceBox-title">
+            <span class="experienceBox-title-nameTitle">
+              Experience
+            </span>
+          </h1>
+          <div class="experienceBox-jobList">
+            <section class="experienceBox-lastJob">
+              <h2 class="experienceBox-lastJob-topbar">
+                <span class="experienceBox-lastJob-date">
+                  Jun. 2023 - Present
+                </span>
+                <div class="experienceBox-tag">
+                  <span class="experienceBox-tag-text">
+                    most recent
+                  </span>
+                </div>
+              </h2>
+              <div class="experienceBox-content">
+                <section class="experienceBox-jobInfo">
+                  <span class="experienceBox-roleName">
+                    Marketing Manager
+                  </span>
+                  <section class="experienceBox-lastJob-aboutJob">
+                    <span class="experienceBox-lastJob-aboutJob-text">
+                      Pankayam
+                    </span>
+                      <span class="experienceBox-lastJob-aboutJob-text">
+                      |
+                    </span>
+                      <span class="experienceBox-lastJob-aboutJob-text">
+                      Full-time
+                    </span>
+                  </section>
+                </section>
+                <section class="experienceBox-featuredPoints">
+                  <span class="experienceBox-points-text">
+                    ·Strategy development and planning of campaigns that promote the business and generate genuine traffic<br>
+·SEO Content Creation for Blogs, Website, Social media
+                  </span>
+                </section>
+              </div>
+            </section>
+            <section class="experienceBox-Job">
+              <h2 class="experienceBox-Job-topbar">
+                <section class="experienceBox-Job-date">
+                  2017 - Present
+                </section>
+              </h2>
+              <div class="experienceBox-content">
+                <section class="experienceBox-jobInfo">
+                  <span class="experienceBox-roleName-typical">
+                    Graphic / Web designer
+                  </span>
+                  <section class="experienceBox-aboutJob">
+                    <span class="experienceBox-job-aboutJob-text">
+                      Freelance
+                    </span>
+                  </section>
+                </section>
+                <section class="experienceBox-featuredPoints">
+                  <span class="experienceBox-points-text-typical">
+                    ·Development of internal projects from scratch, product design of brands<br> 
+                    ·Landing page, webapps and hybrid apps<br>
+                    ·Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.
+                  </span>
+                </section>
+              </div>
+            </section>
+            <section class="experienceBox-Job">
+              <h2 class="experienceBox-Job-topbar">
+                <section class="experienceBox-Job-date">
+                  Sep. 2021 - Jun. 2023
+                </section>
+              </h2>
+              <div class="experienceBox-content">
+                <section class="experienceBox-jobInfo">
+                  <span class="experienceBox-roleName-typical">
+                    Legal Assistant
+                  </span>
+                  <section class="experienceBox-aboutJob">
+                    <span class="experienceBox-job-aboutJob-text">
+                      Law Firm
+                    </span>
+                    <span class="experienceBox-job-aboutJob-text">
+                      |
+                    </span>
+                    <span class="experienceBox-job-aboutJob-text">
+                      Intern
+                    </span>
+                  </section>
+                </section>
+                <section class="experienceBox-featuredPoints">
+                  <span class="experienceBox-points-text-typical">
+                    ·Provide administrative support to lawyer and enhance office effectiveness<br>
+                    ·Handle communication with clients, witnesses etc.<br>
+                    ·repare case briefs and summarize depositions, interrogatories and testimony
+                  </span>
+                </section>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="toolsBox">
+          <section class="toolsBox-title">
+            <section class="toolsBox-nameTitle">
+              <span class="toolsBox-title-text">
+                Tools
+              </span>
+            </section>
+          </section>
+          <section class="frame">
+            <section class="frame-content">
+              <section class="frame-tag">
+                <span class="frame-text">
+                  design
+                </span>
+              </section>
+              <img src="images/logoFigma.jpg" class="logo">
+              <img src="images/🦆 icon _adobe photoshop_.jpg" class="logo">
+              <img src="images/🦆 icon _adobe illustrator_.jpg" class="logo">
+              <img src="images/🦆 icon _adobe premiere_.jpg" class="logo">
+              <img src="images/logoNotion.jpg" class="logo">
+              <img src="images/logoMeet.jpg" class="logo">
+            </section>
+              <section class="frame-content">
+                <section class="frame-tag">
+                  <span class="frame-text">
+                    no-code
+                  </span>
+                </section>
+              <img src="images/logoZapìer 1.png" class="logo">
+              <img src="images/logoWebflow.png" class="logo">
+              <img src="images/logoFramer.png" class="logo">
+              <img src="images/logoWordpress.png" class="logo">
+            </section>
+              <section class="frame-content">
+                <section class="frame-tag">
+                  <span class="frame-text">
+                    artoficial intelligence
+                  </span>
+                </section>
+              <img src="images/logoChatGPT 1.png" class="logo">
+              <img src="images/logoCopilot 1.png" class="logo">
+              <img src="images/logoMidjourney 1.png" class="logo">
+              <img src="images/logoMidjourney 3.png" class="logo">
+            </section>
+          </section>
+        </section>
+        <section class="educationBox">
+          <h3 class="educationBox-title">
+            <span class="educationBox-nameTitle">
+              Education
+            </span>
+          </h3>
+          <section class="educationBox-content">
+            <section class="educationBox-column">
+              <section class="educationBox-lastEducation">
+                <section class="educationBox-topBar">
+                  <span class="educationBox-lastEducation-topBar-text">
+                    2023
+                  </span>
+                  <img src="images/Vector.png" class="educationBox-vector">
+                </section>
+                <section class="educationBox-education-content">
+                  <span class="educationBox-lastEducation-content-nameTitle">
+                     UI/UX
+                  </span>
+                  <section class="educationBox-tags">
+                    <span class="educationBox-lastEducation-tag">
+                      #UX
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #UI
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #research
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #DesignSystem
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #Ui
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #wireframing
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #figma
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #Ux
+                    </span>
+                  </section>
+                </section>
+                <span class="educationBox-lastEducation-schoolname">
+                  Coursera
+                </span>
+              </section>
+              <section class="educationBox-Education">
+                <section class="educationBox-topBar">
+                  <span class="educationBox-topBar-text">
+                    2017
+                  </span>                  
+                </section>
+                <section class="educationBox-education-content">
+                  <span class="educationBox-Education-content-nameTitle">
+                     Graphic design
+                  </span>
+                  <section class="educationBox-tags">
+                    <span class="educationBox-Education-tag">
+                      #branding
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #web
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #illustration
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #adobe
+                    </span>
+                  </section>
+                  <span class="educationBox-Education-schoolname">
+                    Coursera
+                  </span>
+                </section>
+              </section>
+            </section>
+            <section class="educationBox-column">
+              <section class="educationBox-Education">
+                <section class="educationBox-topBar">
+                  <span class="educationBox-topBar-text">
+                    2017 - 2022
+                  </span>                  
+                </section>
+                <section class="educationBox-education-content">
+                  <span class="educationBox-Education-content-nameTitle">
+                     Law
+                  </span>
+                  <section class="educationBox-tags">
+                    <span class="educationBox-Education-tag">
+                      #law
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #legalStudies
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #contracts
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #internationalLaws
+                    </span>
+                  </section>
+                  <span class="educationBox-Education-schoolname">
+                    University of Kerala
+                  </span>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="extraBox">
+          <section class="interestsBox">
+            <h2 class="interestsBox-title">
+              <span class="interestsBox-title-text">
+                Interests
+              </span>
+            </h2>
+            <section class="interestsBox-content">
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  branding
+                </span>
+              </section>
+              <section class="interestsBox-tag"> 
+                <span class="interestsBox-tag-name">
+                  design
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  photography
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  artificial intelligence
+                </span>
+              </section>
+              <section class="interestsBox-tag"> 
+                <span class="interestsBox-tag-name">
+                  illustration
+                </span>
+              </section>
+              <section class="interestsBox-tag"> 
+                <span class="interestsBox-tag-name">
+                  typography
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  social networks
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  research
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  dron pilot
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  games
+                </span>
+              </section>
+            </section>
+          </section>
+          <section class="contact">
+            <section class="contact-title1">
+              <span class="contact-title1-text">
+                Let´s chat! I´m ready to work on excinting projects
+              </span>
+            </section>
+            <section class="contact-title2">
+              <span class="contact-title2-nameTitle">
+                srkarthik.designscape@gmail.com
+              </span>
+            </section>
+          </section>
+        </section>
+      </div>
+      <div class="bentoFlexbox">
+        <img src="images/profileImg.png" alt="Моё фото" class="image" />
+        <section class="nameBox">
+          <h1 class="nameBox-greeting">Hello</h1>
+          <section class="yourInfo">
+            <span class="yourInfo-name">Name</p>
+            <span class="yourInfo-role">Role</p>
+          </section>  
+        </section>
+        <section class="languagesBox">
+          <div class = "languagesBox-title">
+            <span class="languagesBox-title-nameTitle">Languages</p>
+          </div>
+          <section class="languagesBox-listLanguages">
+            <section class="languagesBox-listLanguages-nameLanguage">
+              <span class="languagesBox-listLanguages-nameLanguage-text" style="margin-top:0px;">English<br></span>
+              <span class="languagesBox-listLanguages-nameLanguage-text">Spanish<br></span>
+              <span class="languagesBox-listLanguages-nameLanguage-text">French<br></span>
+            </section>
+            <section class="languagesBox-listLanguages-levelLanguage">
+              <hr class="languagesBox-listLanguages-levelLanguage-bar">
+              <hr class="small-bar2">
+              <hr class="small-bar3">
+            </section>
+          </section>
+        </section>
+        <section class="educationBox2">
+          <h3 class="educationBox-title">
+            <span class="educationBox-nameTitle">
+              Education
+            </span>
+          </h3>
+          <section class="educationBox-content">
+            <section class="educationBox-column">
+              <section class="educationBox-lastEducation">
+                <section class="educationBox-topBar">
+                  <span class="educationBox-lastEducation-topBar-text">
+                    2024
+                  </span>
+                  <img src="images/Vector.png" class="educationBox-vector">
+                </section>
+                <section class="educationBox-education-content">
+                  <span class="educationBox-lastEducation-content-nameTitle">
+                     UX/UI
+                  </span>
+                  <section class="educationBox-tags">
+                    <span class="educationBox-lastEducation-tag">
+                      #UX
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #UI
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #research
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #DesignSystem
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #Agile
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #wireframing
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #figma
+                    </span>
+                    <span class="educationBox-lastEducation-tag">
+                      #IA
+                    </span>
+                  </section>
+                </section>
+                <span class="educationBox-lastEducation-schoolname">
+                  Neoland
+                </span>
+              </section>
+              <section class="educationBox-Education">
+                <section class="educationBox-topBar">
+                  <span class="educationBox-topBar-text">
+                    2017-2021
+                  </span>                  
+                </section>
+                <section class="educationBox-education-content">
+                  <span class="educationBox-Education-content-nameTitle">
+                     Graphic design
+                  </span>
+                  <section class="educationBox-tags">
+                    <span class="educationBox-Education-tag">
+                      #branding
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #web
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #illustration
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #adobe
+                    </span>
+                  </section>
+                  <span class="educationBox-Education-schoolname">
+                    Cali Institute of the Arts
+                  </span>
+                </section>
+              </section>
+            </section>
+            <section class="educationBox-column">
+              <section class="educationBox-Education">
+                <section class="educationBox-topBar">
+                  <span class="educationBox-topBar-text">
+                    2022
+                  </span>                  
+                </section>
+                <section class="educationBox-education-content">
+                  <span class="educationBox-Education-content-nameTitle">
+                     Product designer
+                  </span>
+                  <section class="educationBox-tags">
+                    <span class="educationBox-Education-tag">
+                      #analytics
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #research
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #prototype
+                    </span>
+                    <span class="educationBox-Education-tag">
+                      #wireframes
+                    </span>
+                  </section>
+                  <span class="educationBox-Education-schoolname">
+                    Coursera
+                  </span>
+                </section>
+              </section>
+            </section>
+          </section>
+        </section>
+        <section class="extraBox2">
+          <section class="interestsBox">
+            <h2 class="interestsBox-title">
+              <span class="interestsBox-title-text">
+                Interests
+              </span>
+            </h2>
+            <section class="interestsBox-content">
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  branding
+                </span>
+              </section>
+              <section class="interestsBox-tag"> 
+                <span class="interestsBox-tag-name">
+                  brand identity
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  logo
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  typography
+                </span>
+              </section>
+              <section class="interestsBox-tag"> 
+                <span class="interestsBox-tag-name">
+                  illustration
+                </span>
+              </section>
+              <section class="interestsBox-tag"> 
+                <span class="interestsBox-tag-name">
+                  typography
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  photography
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  designing
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  poster design
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  research
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  social networks
+                </span>
+              </section>
+              <section class="interestsBox-tag">
+                <span class="interestsBox-tag-name">
+                  illustration
+                </span>
+              </section>
+            </section>
+          </section>
+          <section class="contact">
+            <section class="contact-title1">
+              <span class="contact-title1-text">
+                Let´s chat! I´m ready to work on excinting projects
+              </span>
+            </section>
+            <section class="contact-title2">
+              <span class="contact-title2-nameTitle">
+                srkarthik.designscape@gmail.com
+              </span>
+            </section>
+          </section>
+        </section>
+        <section class = "experienceBox2">
+          <h1 class="experienceBox-title">
+            <span class="experienceBox-title-nameTitle">
+              Experience
+            </span>
+          </h1>
+          <div class="experienceBox-jobList">
+            <section class="experienceBox-lastJob">
+              <h2 class="experienceBox-lastJob-topbar">
+                <span class="experienceBox-lastJob-date">
+                  Jun. 2023 - Present
+                </span>
+                <div class="experienceBox-tag">
+                  <span class="experienceBox-tag-text">
+                    most recent
+                  </span>
+                </div>
+              </h2>
+              <div class="experienceBox-content">
+                <section class="experienceBox-jobInfo">
+                  <span class="experienceBox-roleName">
+                    Marketing Manager
+                  </span>
+                  <section class="experienceBox-lastJob-aboutJob">
+                    <span class="experienceBox-lastJob-aboutJob-text">
+                      Pankayam
+                    </span>
+                      <span class="experienceBox-lastJob-aboutJob-text">
+                      |
+                    </span>
+                      <span class="experienceBox-lastJob-aboutJob-text">
+                      Full-time
+                    </span>
+                  </section>
+                </section>
+                <section class="experienceBox-featuredPoints">
+                  <span class="experienceBox-points-text">
+                    ·Strategy development and planning of campaigns that promote the business and generate genuine traffic<br>
+·SEO Content Creation for Blogs, Website, Social media
+                  </span>
+                </section>
+              </div>
+            </section>
+            <section class="experienceBox-Job">
+              <h2 class="experienceBox-Job-topbar">
+                <section class="experienceBox-Job-date">
+                  2017 - Present
+                </section>
+              </h2>
+              <div class="experienceBox-content">
+                <section class="experienceBox-jobInfo">
+                  <span class="experienceBox-roleName-typical">
+                    Graphic / Web designer
+                  </span>
+                  <section class="experienceBox-aboutJob">
+                    <span class="experienceBox-job-aboutJob-text">
+                      Freelance
+                    </span>
+                  </section>
+                </section>
+                <section class="experienceBox-featuredPoints">
+                  <span class="experienceBox-points-text-typical">
+                    ·Development of internal projects from scratch, product design of brands<br> 
+                    ·Landing page, webapps and hybrid apps<br>
+                    ·Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.
+                  </span>
+                </section>
+              </div>
+            </section>
+            <section class="experienceBox-Job">
+              <h2 class="experienceBox-Job-topbar">
+                <span class="experienceBox-Job-date">Sep. 2021 - Jun. 2023</span>
+              </h2>
+              <div class="experienceBox-content">
+                <section class="experienceBox-jobInfo">
+                  <span class="experienceBox-roleName-typical">Legal Assistant</span>
+                  <section class="experienceBox-aboutJob">
+                    <span class="experienceBox-job-aboutJob-text">
+                      Law Firm | Intern
+                    </span>
+                  </section>
+                </section>
+                <section class="experienceBox-featuredPoints">
+                  <span class="experienceBox-points-text-typical">
+                    · Provide administrative support to lawyer and enhance office effectiveness<br>
+                    · Handle communication with clients, witnesses etc.<br>
+                    · Prepare case briefs and summarize depositions, interrogatories and testimony
+                  </span>
+                </section>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="toolsBox2">
+          <section class="toolsBox-title">
+            <section class="toolsBox-nameTitle">
+              <span class="toolsBox-title-text">
+                Tools
+              </span>
+            </section>
+          </section>
+          <section class="frame">
+            <section class="frame-content">
+              <section class="frame-tag">
+                <span class="frame-text">
+                  design
+                </span>
+              </section>
+              <img src="images/logoFigma.jpg" class="logo">
+              <img src="images/🦆 icon _adobe photoshop_.jpg" class="logo">
+              <img src="images/🦆 icon _adobe illustrator_.jpg" class="logo">
+              <img src="images/🦆 icon _adobe premiere_.jpg" class="logo">
+              <img src="images/logoNotion.jpg" class="logo">
+              <img src="images/logoMeet.jpg" class="logo">
+            </section>
+              <section class="frame-content">
+                <section class="frame-tag">
+                  <span class="frame-text">
+                    no-code
+                  </span>
+                </section>
+              <img src="images/logoZapìer 1.png" class="logo">
+              <img src="images/logoWebflow.png" class="logo">
+              <img src="images/logoFramer.png" class="logo">
+              <img src="images/logoWordpress.png" class="logo">
+            </section>
+              <section class="frame-content">
+                <section class="frame-tag">
+                  <span class="frame-text">
+                    artoficial intelligence
+                  </span>
+                </section>
+              <img src="images/logoChatGPT 1.png" class="logo">
+              <img src="images/logoCopilot 1.png" class="logo">
+              <img src="images/logoMidjourney 1.png" class="logo">
+              <img src="images/logoMidjourney 3.png" class="logo">
+            </section>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script>
+      function syncColumnHeights() {
+        const education = document.querySelector('.educationBox');
+        const extra = document.querySelector('.extraBox');
+        const tools = document.querySelector('.toolsBox');
+        const experience = document.querySelector('.experienceBox');
+        education.style.height = 'auto';
+        tools.style.height = 'auto';
+        extra.style.height = 'auto';
+        experience.style.height = 'auto';
+        const leftHeight = experience.offsetHeight
+        const rightHeight = tools.offsetHeight;
+        const maxHeight = Math.max(leftHeight, rightHeight);
+        experience.style.height = maxHeight + 'px';
+        tools.style.height = maxHeight + 'px';
+        const leftHeight2 = education.offsetHeight
+        const rightHeight2 = extra.offsetHeight;
+        const maxHeight2 = Math.max(leftHeight2, rightHeight2);
+        experience.style.height = maxHeight + 'px';
+        tools.style.height = maxHeight + 'px';
+        education.style.height = maxHeight2+ 'px';
+        extra.style.height = maxHeight2 + 'px';
+        const education2 = document.querySelector('.educationBox2');
+        const extra2 = document.querySelector('.extraBox2');
+        const tools2 = document.querySelector('.toolsBox2');
+        const experience2 = document.querySelector('.experienceBox2');
+        education2.style.height = 'auto';
+        tools2.style.height = 'auto';
+        extra2.style.height = 'auto';
+        experience2.style.height = 'auto';
+        const leftHeight3 = experience2.offsetHeight
+        const rightHeight3 = tools2.offsetHeight;
+        const maxHeight3 = Math.max(leftHeight3, rightHeight3);
+        experience2.style.height = maxHeight3 + 'px';
+        tools2.style.height = maxHeight3 + 'px';
+        const leftHeight4 = education2.offsetHeight
+        const rightHeight4 = extra2.offsetHeight;
+        const maxHeight4 = Math.max(leftHeight4, rightHeight4);
+        education2.style.height = maxHeight4+ 'px';
+        extra2.style.height = maxHeight4 + 'px';
+      }
+
+      window.addEventListener('load', syncColumnHeights);
+      window.addEventListener('resize', syncColumnHeights);
+    </script>
+    <script>
+      document.querySelectorAll('.page *').forEach((el, index) => {
+        if ((el.children.length === 0 && el.textContent.trim() !== '') || el.classList.contains('experienceBox-points-text') || el.classList.contains('experienceBox-points-text-typical')
+         || el.classList.contains('languagesBox-title-nameTitle') || el.classList.contains('languagesBox-listLanguages-nameLanguage-text')
+         || el.classList.contains('yourInfo-name') || el.classList.contains('yourInfo-role') || el.classList.contains('toolsBox-title-text')) {
+          el.setAttribute('contenteditable', 'true');
+          el.classList.add('editable');
+          if (!el.id) {
+            el.id = 'editable-' + index;
+          }
+          const saved = localStorage.getItem(el.id);
+          if (saved) el.innerHTML = saved;
+          el.addEventListener('input', () => {
+            el.classList.add('edited');
+            localStorage.setItem(el.id, el.innerHTML);
+            forceLayoutUpdate(el);
+            syncColumnHeights();
+          });
+          el.addEventListener('animationend', () => {
+            el.classList.remove('edited');
+          });
+        }
+      });
+      function forceLayoutUpdate(el) {
+        const parent = el.closest('.block, .box, .page');
+        if (parent) {
+          parent.style.height = 'auto';
+          parent.offsetHeight;
+      }
+    }
+    </script>
+    <script type="module" src="js/main.js"></script>  
   </body>
 </html>

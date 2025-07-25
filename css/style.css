@@ -1,96 +1,1909 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+span {
+  display: block;
+}
+.page {
+/* CV V1 */
+
+  position: relative;
+  width: 1300px;
+  height: auto;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  padding: 30px;
+  gap:40px;
 }
+.bentoFlexbox {
+  /* bentoFlexbox */
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0px;
+  gap: 20px;
+  margin: 0;
+  width: 555px;
+  height: auto;
+
 }
+.image {
+  /* profileImg */
 
-#app {
-  max-width: 1280px;
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+
+  width: 124px;
+  height: 124px;
+
+  mix-blend-mode: normal;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.nameBox {
+  /* nameBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+
+  width: 124px;
+  height: 124px;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.nameBox-greeting {
+  /* greetingPhrase */
+
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+  width: 100px;
+  line-height: 1.2;
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-family: 'Poppins';
+  font-style: normal;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
+  font-size: 10px;
+
+  /* identical to box height, or 15px */
+
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
 }
-button:hover {
-  border-color: #646cff;
+.yourInfo {
+  /* yourInfo */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 6px;
+
+  margin: 0 auto;
+  width: 100px;
+  height: 39px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.yourInfo-name {
+  /* name */
+
+  width: 100px;
+  line-height: 1.1;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+
+  /* identical to box height, or 15px */
+
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.yourInfo-role {
+  /* role */
+
+  width: 100px;
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2;
+  /* identical to box height, or 18px */
+
+
+  color: #5C5C5C;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.languagesBox {
+  /* lenguagesBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+
+  width: 267px;
+  height: 124px;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
 }
+.languagesBox-title {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+
+  width: 79px;
+  height: 21px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.languagesBox-title-nameTitle {
+  /* nameTitle */
+
+  width: 79px;
+  height: 21px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.languagesBox-listLanguages {
+  /* listLenguages */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 17px;
+
+  width: 243px;
+  height: 53px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.languagesBox-listLanguages-nameLanguage {
+  /* nameLenguage */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.languagesBox-listLanguages-nameLanguage-text {
+  /* English */
+
+  width: auto;
+  height: 10px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 104%;
+  /* or 10px */
+  text-align: left;
+  margin-top:10px;
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.languagesBox-listLanguages-levelLanguage {
+  /* levelLenguage */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 168px;
+  height: 53px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+
+}
+.languagesBox-listLanguages-levelLanguage-bar {
+  /* galicianProgressBar */
+
+  width: 168px;
+  height: 11px;
+
+  background: #28D979;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.languagesBox-listLanguages-levelLanguage-bar2 {
+    /* englishProgressBar */
+
+  width: 129px;
+  height: 11px;
+
+  background: #28D979;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+.experienceBox {
+  /* experienceBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 12px 12px 12px;
+  gap: 16px;
+
+  width: 411px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+
+}
+.experienceBox2 {
+  /* experienceBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 12px 12px 12px;
+  gap: 16px;
+
+  width: 411px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+
+}
+.experienceBox-title {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 25px;
+
+  width: 77px;
+  height: 21px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-title-nameTitle {
+  /* nameTIitle */
+
+  width: 77px;
+  height: 21px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-jobList {
+  /* jobList */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 387px;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-lastJob {
+  /* lastJob */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+
+  width: 387px;
+  height: auto;
+
+  background: #28D979;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-Job{
+    /* job-2 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+
+  width: 387px;
+  height: auto;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-lastJob-topbar {
+  /* topBar */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 371px;
+  height: 16px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-Job-topbar {
+  /* topBar */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 371px;
+  height: 12px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-lastJob-date {
+  /* date */
+
+  margin: 0 ;
+  width: 78px;
+  height: 12px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-Job-date {
+  /* date */
+
+  width: auto;
+  height: 12px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-tag {
+  /* tag */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 0px;
+  gap: 10px;
+
+  margin: 0;
+  width: 61px;
+  height: 16px;
+
+  background: rgba(126, 115, 18, 0.4);
+  border-radius: 59px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.experienceBox-tag-text {
+  /* most recent */
+
+  margin: 0 auto;
+  width: 49px;
+  height: 12px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 155%;
+  /* or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #DDF163;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-content {
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 371px;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-jobInfo {
+  /* jobInfo */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 124px;
+  height: 25px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-roleName {
+/* roleName */
+
+width: auto;
+height: 15px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 10px;
+line-height: 150%;
+/* identical to box height, or 15px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: -2px 0px;
+
+}
+.experienceBox-roleName-typical{
+    /* roleName */
+
+  width: auto;
+  height: 15px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: -2px 0px;
+
+}
+.experienceBox-aboutJob {
+  /* aboutJob */
+  
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 0px 6px;
+
+  width: auto;
+  height: 12px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-lastJob-aboutJob {
+    /* aboutJob */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 0px 6px;
+
+  width: auto;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-lastJob-aboutJob-text {
+  /* companyName */
+
+  width: auto;
+  height: 12px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #EBF9F2;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-job-aboutJob-text {
+  /* info */
+
+  width: auto;
+  height: 12px;
+  white-space: nowrap;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #3F3D3D;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.experienceBox-featuredPoints {
+    /* featuredPoints */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: auto;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+
+}
+.experienceBox-points-text {
+    /* points */
+
+  width: 239px;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* or 12px */
+  display: flex;
+  align-items: top;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.experienceBox-points-text-typical {
+  /* points */
+
+  width: 239px;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* or 12px */
+  display: flex;
+  align-items: top;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.toolsBox {
+  /* toolsBox */
+
+  width: 124px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+  padding-bottom: 4px;
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+
+}
+.toolsBox2 {
+  /* toolsBox */
+
+  width: 124px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+  padding-bottom: 4px;
+  /* Inside auto layout */
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+
+}
+.toolsBox-title {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px 0px 12px;
+  gap: 25px;
+
+  position: absolute;
+  width: auto;
+  height: auto;
+
+
+}
+.toolsBox-nameTitle {
+  /* nameTitle */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+
+  width: auto;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+}
+.toolsBox-title-text {
+  /* Tools */
+
+  width: auto;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.frame {
+  /* Frame 1 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px 0px 0px 24px;
+  gap: 12px;
+  isolation: isolate;
+
+  position: relative;
+  width: auto;
+  height: auto;
+
+
+}
+.logo {
+  /* logoFigma */
+
+  width: auto;
+  height: auto;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  z-index: 0;
+
+}
+.frame-tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px 6px;
+  gap: 10px;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: #000000;
+  border-radius: 59px;
+
+  white-space: nowrap;
+  width: max-content;
+  height: auto;
+
+  z-index: 6;
+}
+.frame-content {
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 12px 4px 12px;
+  gap: 16px;
+  position: relative;
+  width: 76px;
+  height: auto;
+
+  background: #FFFFFF;
+  border-radius: 6px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  z-index: 1;
+
+}
+.frame-text {
+  /* design */
+
+  width: auto;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5px;
+  line-height: 142%;
+  /* identical to box height, or 7px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox {
+  /* educationBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+
+  width: 268px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+
+}
+.educationBox2 {
+  /* educationBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+
+  width: 268px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+
+}
+.educationBox-title {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+
+  width: auto;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-nameTitle {
+  /* nameTitle */
+
+  width: auto;
+  height: auto;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-content {
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 248px;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.educationBox-column {
+  /* column-1 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 116px;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-lastEducation {
+  /* lastEducation */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+
+  width: 116px;
+  height: auto;
+
+  background: #28D979;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-topBar {
+  /* topBar */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+
+  width: 100px;
+  height: 15px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.educationBox-lastEducation-topBar-text {
+  /* 2023 */
+
+  margin: 0;
+  width: auto;
+  height: 15px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-topBar-text {
+    /* 2017 */
+
+  margin: 0;
+  width: auto;
+  height: 15px;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}  
+.educationBox-vector {
+  /* Vector */
+
+  margin: 0;
+  width: auto;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.educationBox-education-content {
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+
+  width: 100px;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.educationBox-Education {
+  /* education-2 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 8px;
+  gap: 8px;
+
+  width: 116px;
+  height: auto;
+
+  background: #FFFFFF;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+.educationBox-lastEducation-content-nameTitle {
+  /* nameTitle */
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: -2px 0px;
+
+}
+.educationBox-Education-content-nameTitle {
+  /* nameTitle */
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: -2px 0px;
+
+}
+.educationBox-tags {
+  /* tags */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 0px 2px;
+
+  width: 100px;
+  height: auto;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.educationBox-lastEducation-tag {
+  /* tag-1 */
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #EBF9F2;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-Education-tag {
+  /* tag-1 */
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #149063;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.educationBox-lastEducation-schoolname {
+  /* schoolName */
+
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+.educationBox-Education-schoolname {
+  /* schoolName */
+
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  /* identical to box height, or 12px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+.extraBox {
+  /* extraBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 267px;
+  height: 289px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 6;
+  flex-grow: 0;
+
+}
+.extraBox2 {
+  /* extraBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+
+  width: 267px;
+  height: 289px;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+
+}
+.interestsBox {
+  /* interestsBox */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 16px;
+
+  width: 267px;
+  height: auto;
+
+  background: #F0F0F0;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.interestsBox-title {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.interestsBox-title-text {
+  /* nameTitle */
+
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.interestsBox-content {
+  /* content */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 243px;
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.interestsBox-tag {
+  /* tag-1 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 4px 10px;
+  gap: 10px;
+
+
+
+  background: #FFFFFF;
+  border-radius: 40px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.interestsBox-tag-name {
+  /* name */
+
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+.contact {
+  /* contact */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+
+
+
+  background: #000000;
+  border-radius: 12px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+
+}
+.contact-title1 {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+
+  margin: 0 auto;
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.contact-title1-text {
+  /* nameTitle */
+
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.contact-title2 {
+  /* title */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  margin: 0;
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+}
+.contact-title2-nameTitle {
+  /* nameTitle */
+
+
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  /* identical to box height, or 15px */
+  display: flex;
+  align-items: center;
+
+  color: #DDDDDD;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+@keyframes highlightChange {
+  0%   { background-color: #fffac0; }
+  100% { background-color: transparent; }
+}
+
+.editable.edited {
+  animation: highlightChange 0.8s ease-out;
+}
+.small-bar {
+  /* englishProgressBar */
+
+  width: 129px;
+  height: 11px;
+
+  background: #28D979;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+.small-bar2 {
+  /* englishProgressBar */
+
+  width: 144px;
+  height: 11px;
+
+  background: #28D979;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+.small-bar3 {
+    /* englishProgressBar */
+
+  width: 123px;
+  height: 11px;
+
+  background: #28D979;
+  border-radius: 3px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+}
+
